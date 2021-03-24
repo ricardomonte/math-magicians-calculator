@@ -1,15 +1,18 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-function Calculator(props) {
-  return(
+function Calculator({ name }) {
+  return (
     <div>
-      <h1>hello world {props.name}</h1>
+      <h1>
+        hello world
+        {` ${name}`}
+      </h1>
     </div>
   );
 }
 
 Calculator.propTypes = {
-  name: PropTypes.string.isRequired
-}
+  name: PropTypes.string.isRequired,
+};
 
 export default Calculator;
