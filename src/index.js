@@ -4,7 +4,7 @@ import Calculator from './Calculator'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator name={'ricardo'} />
+    <Calculator name={'Ricardo'} />
   </React.StrictMode>,
   document.getElementById('root')
 );
