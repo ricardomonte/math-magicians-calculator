@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Calculator from './Calculator';
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator name="Ricardo" />
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 );
