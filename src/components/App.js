@@ -16,7 +16,6 @@ class App extends Component {
 
   handleClick = (simbolOperation) => {
     const result = Calculate(this.state, simbolOperation);
-    console.log(result);
     this.setState(result);
   }
 
