@@ -1,6 +1,7 @@
 import Operate from './operate';
 
-const Calculate = ({ total, next, operator }, buttonName) => {
+const Calculate = (data, buttonName) => {
+  const { total, next, operator } = data;
   switch (buttonName) {
     case '+/-':
       if (total) {

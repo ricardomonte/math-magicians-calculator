@@ -4,8 +4,8 @@ import ButtonPanel from './ButtonPanel';
 import Calculate from '../logic/calculate';
 
 function App() {
-  const test = Calculate({ total: '5', next: 1, operator: '+' }, '=');
-  console.log(test);
+  Calculate({ total: '5', next: 1, operator: '+' }, '=');
+
   return (
     <>
       <Display />
