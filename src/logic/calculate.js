@@ -19,23 +19,23 @@ const Calculate = ({ total, next, operator }, buttonName) => {
 
     case 'AC':
       return {
-        total: null,
-        next: null,
-        operator: null,
+        total: '',
+        next: '',
+        operator: '',
       };
 
     case '=':
       if (next === '0' && buttonName === '÷') {
         return {
           total: NaN,
-          next: null,
-          operator: null,
+          next: '',
+          operator: '',
         };
       }
       return {
         total: next ? Operate(total, next, operator) : total,
-        next: null,
-        operator: null,
+        next: '',
+        operator: '',
       };
 
     case '%':
@@ -82,7 +82,7 @@ const Calculate = ({ total, next, operator }, buttonName) => {
 
         return {
           total,
-          next: `0${buttonName}`,
+          next: `${buttonName}`,
           operator,
         };
       }
@@ -94,7 +94,7 @@ const Calculate = ({ total, next, operator }, buttonName) => {
         };
       }
       return {
-        total: `0${buttonName}`,
+        total: `${buttonName}`,
         next,
         operator,
       };
@@ -103,13 +103,13 @@ const Calculate = ({ total, next, operator }, buttonName) => {
       if (operator) {
         return {
           total: next ? Operate(total, next, operator) : NaN,
-          next: null,
+          next: '',
           operator: buttonName,
         };
       }
       break;
   }
-  return { total: next, next: null, operator: buttonName };
+  return { total: next, next: '', operator: buttonName };
 };
 
 export default Calculate;
