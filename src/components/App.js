@@ -31,10 +31,9 @@ class App extends Component {
     }
 
     return (
-      <div>
+      <div className="w-25 bg-white">
         <Display calculation={display} />
         <ButtonPanel onClick={this.handleClick} />
-
       </div>
     );
   }
