@@ -19,9 +19,7 @@ const Operate = (numberOne, numberTwo, operation) => {
       result = firstNumber.div(secondNumber);
       break;
     case '%':
-      result = secondNumber === 0
-        ? firstNumber.div(100)
-        : firstNumber.div(100).times(secondNumber);
+      result = (firstNumber.div(100)).times(secondNumber);
       break;
     default:
       result = null;
