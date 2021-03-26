@@ -11,7 +11,7 @@ This is Milestone 4 of the project Calculator from the React and Redux module fr
 
 ##  :red_circle: Live Demo:
 
-[Live demo](https://amazing-golick-931359.netlify.app/)
+[Live demo](https://math-magic-calculator0106.herokuapp.com/)
 
 ##  :construction_worker: Getting Started
 
