@@ -1,11 +1,13 @@
 # Math Magicians Calculator
 
-This is Milestone 4 of the project Calculator from the React and Redux module from Microvers. This Milestone goal is to create and add logic to calculate.js and operate.js 
+Math Magicians Calculator is the first project from the React and Redux module from Microvers. The goal is to create a basic calculator for a fictional company based in France, Math Magicians, to help them with their calculations.  
+
+![website screenshots](Screenshot.png)
 
 ##  :hammer: Built with:
 
 - Html
-- Css
+- Bootstrap
 - JavaScript
 - React
 
@@ -18,8 +20,7 @@ This is Milestone 4 of the project Calculator from the React and Redux module fr
 To get a local copy up and running follow these simple steps:
 
 - Go to the main page.
-- Press the "Code" button and get the repo link.
-- Clone it using git command "git clone".
+- Clone it using git command "git clone git@github.com:ricardomonte/math-magicians-calculator.git".
 - Open in terminal the folder just cloned.
 - run in terminal 'npm install'.
 - To see locally run 'npm run start'.

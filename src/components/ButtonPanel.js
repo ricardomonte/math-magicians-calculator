@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-function ButtonPanel() {
+function ButtonPanel({ onClick }) {
   const namesButtons = {
     group1: ['AC', '+/-', '%', '÷'],
     group2: ['7', '8', '9', 'X'],
@@ -11,12 +12,22 @@ function ButtonPanel() {
 
   const arrKeys = Object.keys(namesButtons);
   const buttons = arrKeys
-    .map((key) => namesButtons[key].map((element) => <Button key={element} name={element} />));
+    .map((key) => namesButtons[key].map((element) => (
+      <Button
+        key={element}
+        name={element}
+        onClick={onClick}
+      />
+    )));
   return (
     <>
       { buttons.map((groupButton, i) => <div key={arrKeys[i]}>{groupButton}</div>) }
     </>
   );
 }
+
+ButtonPanel.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
