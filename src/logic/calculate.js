@@ -39,13 +39,6 @@ const Calculate = (data, buttonName) => {
         operator: '',
       };
 
-    case '%':
-      return {
-        total: next ? Operate(total, next, operator) : NaN,
-        next: null,
-        operator: null,
-      };
-
     case '1':
     case '2':
     case '3':
@@ -59,13 +52,13 @@ const Calculate = (data, buttonName) => {
       if (operator) {
         return {
           total,
-          next: next ? `${next} ${buttonName}` : buttonName,
+          next: next ? `${next}${buttonName}` : buttonName,
           operator,
         };
       }
 
       return {
-        total: total ? `${total} ${buttonName}` : buttonName,
+        total: total ? `${total}${buttonName}` : buttonName,
         next,
         operator,
 
@@ -108,9 +101,8 @@ const Calculate = (data, buttonName) => {
           operator: buttonName,
         };
       }
-      break;
   }
-  return { total: next, next: '', operator: buttonName };
+  return { total, next: '', operator: buttonName };
 };
 
 export default Calculate;
