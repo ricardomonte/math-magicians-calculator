@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #e8eaec;
+  background-color: white;
 }
 
 h1 {
@@ -38,17 +38,63 @@ h1 {
 
 .calculator {
   display: grid;
-  grid-template-columns: 1fr 43.75rem 1fr;
-  grid-template-rows: 100px 20px 37.5rem 100px;
+  grid-template-columns: 2fr 43.75rem 150px;
+  grid-template-rows: 100px 100px 37.5rem 100px;
   grid-template-areas:
     'nav nav nav'
     '. . .'
-    '. calculator .'
+    'calc calculator .'
     '. . .';
+}
+
+.Navbar {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #e8eaec;
+  border-bottom: 1px solid black;
+}
+
+.Navbar h1 {
+  font-size: 4rem;
+}
+
+.Navbar nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.Navbar nav a {
+  text-decoration: none;
+}
+
+.Home {
+  grid-area: 3 / 1 / 4 / 3;
+  margin: 0 2rem;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.Home h1 {
+  font-size: 3rem;
+}
+
+.Math {
+  grid-area: calc;
+  padding-left: 2rem;
+  font-size: 1.5em;
 }
 
 .App {
   grid-area: calculator;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .Display {
@@ -67,4 +113,13 @@ h1 {
   font-size: 2rem;
   text-decoration: none;
   border: 1px solid #d0d0d0;
+}
+
+.Quote {
+  grid-area: 3 / 1 / 4 / 3;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
 }
