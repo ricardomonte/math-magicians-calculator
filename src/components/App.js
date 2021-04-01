@@ -24,10 +24,15 @@ function App() {
   };
 
   return (
-    <div className="w-100 h-100 App">
-      <Display calculation={result()} />
-      <ButtonPanel onClick={handleClick} />
-    </div>
+    <>
+      <div className="Math">
+        <h2>Let&acute;s do some math </h2>
+      </div>
+      <div className="w-100 h-100 App">
+        <Display calculation={result()} />
+        <ButtonPanel onClick={handleClick} />
+      </div>
+    </>
   );
 }
 
