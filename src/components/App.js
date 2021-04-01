@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="w-25 bg-white">
+    <div className="w-100 h-100 App">
       <Display calculation={result()} />
       <ButtonPanel onClick={handleClick} />
     </div>

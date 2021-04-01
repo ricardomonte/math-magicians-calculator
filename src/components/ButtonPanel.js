@@ -21,7 +21,7 @@ function ButtonPanel({ onClick }) {
     )));
   return (
     <>
-      { buttons.map((groupButton, i) => <div key={arrKeys[i]}>{groupButton}</div>) }
+      { buttons.map((groupButton, i) => <div className="hpx-100" key={arrKeys[i]}>{groupButton}</div>) }
     </>
   );
 }
