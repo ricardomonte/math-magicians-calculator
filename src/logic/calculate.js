@@ -4,7 +4,7 @@ const Calculate = (data, buttonName) => {
   const { total, next, operator } = data;
   switch (buttonName) {
     case '+/-':
-      if (total) {
+      if (total && !operator) {
         const number = parseInt(total, 10) * -1;
         return {
           total: number.toString(),
@@ -12,11 +12,14 @@ const Calculate = (data, buttonName) => {
           operator,
         };
       }
-      return {
-        total,
-        next: (parseInt(next, 10) * -1).toString(),
-        operator,
-      };
+      if (next) {
+        return {
+          total,
+          next: (parseInt(next, 10) * -1).toString(),
+          operator,
+        };
+      }
+      break;
 
     case 'AC':
       return {
@@ -26,9 +29,9 @@ const Calculate = (data, buttonName) => {
       };
 
     case '=':
-      if (next === '0' && buttonName === '÷') {
+      if (next === '0' && operator === '÷') {
         return {
-          total: NaN,
+          total: 'Error',
           next: '',
           operator: '',
         };
@@ -96,7 +99,7 @@ const Calculate = (data, buttonName) => {
     default:
       if (operator) {
         return {
-          total: next ? Operate(total, next, operator) : NaN,
+          total: next ? Operate(total, next, operator) : 'Error',
           next: '',
           operator: buttonName,
         };
