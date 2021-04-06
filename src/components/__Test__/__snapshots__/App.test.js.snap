@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`return content from Home matches snapshot 1`] = `
+<div>
+  <div
+    class="Math"
+  >
+    <h2>
+      Let´s do some math 
+    </h2>
+  </div>
+  <div
+    class="w-100 h-100 App"
+  >
+    <div
+      class="Display hpx-100"
+    >
+      <h1>
+        0
+      </h1>
+    </div>
+    <div
+      class="hpx-100"
+    >
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        %
+      </button>
+      <button
+        class="btn h-100 bg-button-orange w-25"
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      class="hpx-100"
+    >
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        7
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        8
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        9
+      </button>
+      <button
+        class="btn h-100 bg-button-orange w-25"
+        type="button"
+      >
+        X
+      </button>
+    </div>
+    <div
+      class="hpx-100"
+    >
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        4
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        5
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        6
+      </button>
+      <button
+        class="btn h-100 bg-button-orange w-25"
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      class="hpx-100"
+    >
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        1
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        2
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        3
+      </button>
+      <button
+        class="btn h-100 bg-button-orange w-25"
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      class="hpx-100"
+    >
+      <button
+        class="btn h-100 bg-button-normal w-50"
+        type="button"
+      >
+        0
+      </button>
+      <button
+        class="btn h-100 bg-button-normal w-25"
+        type="button"
+      >
+        .
+      </button>
+      <button
+        class="btn h-100 bg-button-orange w-25"
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;

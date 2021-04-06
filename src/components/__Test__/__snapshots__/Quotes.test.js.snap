@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`return content from Home matches snapshot 1`] = `
+<div>
+  <div
+    class="Quote"
+  >
+    <figure>
+      <blockquote>
+        “Pure mathematics is, in its way, the poetry of logic ideas”
+      </blockquote>
+      <figcaption>
+        -Albert Einstein-
+      </figcaption>
+    </figure>
+  </div>
+</div>
+`;

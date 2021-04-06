@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`return content from Button matches snapshot 1`] = `
+<div>
+  <button
+    class="btn h-100 bg-button-normal w-25"
+    type="button"
+  >
+    8
+  </button>
+</div>
+`;

@@ -2,7 +2,7 @@
 
 Math Magicians Calculator is the first project from the React and Redux module from Microvers. The goal is to create a basic calculator for a fictional company based in France, Math Magicians, to help them with their calculations.  
 
-![website screenshots](Screenshot.png)
+![website screenshots](Screenshot_Math_Magicians_Calculator.png)
 
 ##  :hammer: Built with:
 
@@ -10,6 +10,8 @@ Math Magicians Calculator is the first project from the React and Redux module f
 - Bootstrap
 - JavaScript
 - React
+- Jest
+- React Testing Library
 
 ##  :red_circle: Live Demo:
 
@@ -24,6 +26,14 @@ To get a local copy up and running follow these simple steps:
 - Open in terminal the folder just cloned.
 - run in terminal 'npm install'.
 - To see locally run 'npm run start'.
+
+## :heavy_check_mark: Test
+
+For testing:
+
+- Open in terminal the folder just cloned.
+- If you run 'npm install', continue reading. If not first run 'npm install'
+- To run the test, in the terminal run 'npm run test'.
 
 ## :bust_in_silhouette: Author
 
